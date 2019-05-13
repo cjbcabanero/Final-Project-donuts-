@@ -1,6 +1,4 @@
-div 
-  p(id=part._id)
-center
+center(id=part._id)
   .card.text-center
   .card.text-white.bg-info.mb-3.text-center(style='max-width: 90rem;')
     h3.card-header
@@ -9,10 +7,11 @@ center
       h5.card-title Content: #{part.content}
       p.card-text.text-blue1 Type: #{part.type}
       p.card-text.text-blue1 Category: #{part.category}
-      p.upvotes-count.card-text.text-blue1 Downvotes: #{part.downvotes}
-      p.downvotes-count.card-text.text-blue1 Upvotes: #{part.upvotes}
+      p.upvotes-count.card-text.text-blue1 Upvotes: #{part.upvotes}
+      p.downvotes-count.card-text.text-blue1 Downvotes: #{part.downvotes}
       p.card-text.text-blue1 Comments: #{part.comments}
       button.btn.btn-success.updown(class="upvote-post" type='button' data-id=part._id) Upvote 
       button.btn.btn-danger.updown(class="downvote-post" type='button' data-id=part._id) Downvote
     .card-footer.text-muted
-      | Date: #{part.date}
+      p.text-white Date: #{part.date} 
+      p.text-white @Copyright 2019 by Christian-Jared Cabanero. All rights reserved.
