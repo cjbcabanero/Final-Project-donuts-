@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+  
+  center
+    div.container
+      h1.text-blue Log In
+      .row.justify-content-center
+    form(id='login-form' action='/logIn' method='POST')
+      .form-group
+        label.text-blue(for='exampleInputUsername1') Username 
+        textarea#title.form-control(type='text' placeholder='username' name='username')
+      .form-group
+        label.text-blue(for='exampleInputPassword1') Password
+        input#exampleInputPassword1.form-control(type='password', placeholder='password' name='password')
+      button.btn.btn-primary(type='submit') Submit

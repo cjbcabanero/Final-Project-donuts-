@@ -1,0 +1,81 @@
+h1 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 50px
+}
+
+h2 {
+  font-family: "Chalkduster", fantasy;
+  color: red;
+  text-align: center;
+  font-size: 60px;
+  text-decoration: underline overline;
+  text-decoration-color: orange;
+}
+
+h4 {
+  color: magenta;
+}
+
+h5 {
+  color: red;
+}
+
+body {
+  background-image: url('https://mastergolflivestream.com/images/clipart-candy-sprinkle-14.jpg')
+}
+
+.text-blue {
+  color: #2DE1C2;
+  font-family: cursive;
+  font-size: 50px;
+}
+
+.text-blue1 {
+  /* color: #4392F1; */
+  color: #FADF63;
+}
+
+.card {
+  width: 800px;
+}
+
+.updown {
+  width: 100px;
+}
+
+
+p {
+  color: magenta;
+}
+
+a {
+  color: #FADF63;
+  font-size: 30px;
+}
+
+#content {
+  height: 150px;
+  width:400px;
+  resize: none;
+}
+
+#title {
+  height:38px;
+  width:400px;
+  resize: none;
+}
+
+#footer {
+  color: red;
+}
+
+#exampleInputEmail1 {
+  height:38px;
+  width:450px;
+}
+
+#exampleInputPassword1 {
+  height:38px;
+  width:400px;
+}

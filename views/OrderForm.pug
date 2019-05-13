@@ -1,0 +1,36 @@
+extends layout.pug
+
+block content 
+  div.container
+    h1.text-blue Welcome To CC's Donuts
+    .row.justify-content-center
+      
+      
+      form(action='/new-post' method='POST')
+        div
+          label.text-blue(for='title') Name 
+          textarea#title.form-control(type='text' placeholder='Name' name='title')
+        div
+          label.text-blue(for='title') Delivery Location
+          textarea#title.form-control(type='text' placeholder='Address' name='address')
+        div  
+          label.text-blue(for='type')  
+          select.form-control(id='post-type' name='type')
+            option(value='text') Donut Holes 
+            option(value='url') Glazed
+            option(value='image') Chocolate 
+            option(value='audio') Strawberry
+            option(value='audio') Filled Donut
+            option(value='video') Coffee 
+        div(id='post-content')
+          label.text-blue(for='content') Special Requests 
+          textarea#content.form-control(type='content' placeholder='Insert Request' name='request')
+        div
+          label.text-blue(for='category') Category 
+          select.form-control(name='category')
+            option(value='sports') SPORTS
+            option(value='games') GAMES
+            option(value='school') SCHOOL
+            option(value='other') OTHER
+        div
+          button(type = "submit") Submit

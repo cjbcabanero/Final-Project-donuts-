@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+  
+  center
+    div.container
+      h1.text-blue Sign Up
+      .row.justify-content-center
+    form(action='/signup' method = 'POST')
+      .form-group
+        label.text-blue(for='exampleInputEmail1') Email address
+        input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email' name='email')
+        small#emailHelp.form-text.text-muted We'll never share your email with anyone else.
+      .form-group
+        label.text-blue(for='exampleInputUsername1') Username 
+        textarea#title.form-control(type='text' placeholder='username' name='username')
+      .form-group
+        label.text-blue(for='exampleInputPassword1') Password
+        input#exampleInputPassword1.form-control(type='password', placeholder='password' name='password')
+      .form-group
+        label.text-blue(for='exampleInputPassword2') Confirm Password
+        input#exampleInputPassword1.form-control(type='password', placeholder='Password' name='password2')
+      button.btn.btn-primary(type='submit') Submit
