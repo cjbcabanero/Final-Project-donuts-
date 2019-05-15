@@ -1,7 +1,38 @@
 h1 {
-  font-family: cursive;
+  position: relative;
+}
+
+.text-free{
+  font-family: 'Freehand521BTRegular';
+  font-weight: normal;
+  font-style: normal;
   text-align: center;
-  font-size: 50px
+  font-size: 65px;
+  color: white;
+}
+.text-free:after, .text-free:before{
+   content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background-color:red;
+  display: block;
+  height: 3px;
+}
+.text-free:after {
+   bottom: -10px;
+  left: 30px;
+ }
+
+.text-free:before {
+   bottom: -5px;
+ }
+
+.text-blue {
+  font-family: 'SpaceMeatballRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
 }
 
 h2 {
@@ -25,13 +56,6 @@ body {
   background-image: url('https://mastergolflivestream.com/images/clipart-candy-sprinkle-14.jpg')
 }
 
-.text-blue {
-  /* color: #2DE1C2; */
-  color: black;
-  font-family: cursive;
-  font-size: 50px;
-}
-
 .text-blue1 {
   /* color: #4392F1; */
   color: #FADF63;
@@ -46,14 +70,21 @@ body {
 }
 
 
-p {
+/* p {
   color: magenta;
+} */
+
+p {
+   font-family: 'SpaceMeatballRegular';
+   font-weight: normal;
+   font-style: normal;
 }
 
 a {
-  /* color: #FADF63; */
-  color: black;
-  font-size: 30px;
+  font-family: 'SpaceMeatballRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
 }
 
 #content {

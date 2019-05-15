@@ -37,25 +37,25 @@ $( document ).ready(function() {
       // so that we display the right form label and field for the user
       //e.target.value is what was selected
 
-    $('#post-type').on('change', function (e) {
-      if (e.target.value == 'url') {
-        $('#post-content').html(`
-          <label class='text-blue' for="content">Url</label>
-          <input class="form-control" type="text" placeholder="url">
-        `)
-      } else if (e.target.value == 'audio' || e.target.value == 'image' || e.target.value == 'video') {
-        $('#post-content').html(`
-
-          <label class='text-blue' for="custom-file">Choose file</label>
-          <input class="form-control" type="file" name="custom-file" style='color:red'/>
-
-        `)
-      } else if (e.target.value == 'text') {
-        $('#post-content').html(`
-          <label class='text-blue' for="content">Content</label>
-          <textarea id='content' class='form-control' name="content"></textarea>
-        `)
-      }
-    })
-
+  //   $('#post-type').on('change', function (e) {
+  //     if (e.target.value == 'url') {
+  //       $('#post-content').html(`
+  //         <label class='text-blue' for="content">Url</label>
+  //         <input class="form-control" type="text" placeholder="url">
+  //       `)
+  //     } else if (e.target.value == 'audio' || e.target.value == 'image' || e.target.value == 'video') {
+  //       $('#post-content').html(`
+  //
+  //         <label class='text-blue' for="custom-file">Choose file</label>
+  //         <input class="form-control" type="file" name="custom-file" style='color:red'/>
+  //
+  //       `)
+  //     } else if (e.target.value == 'text') {
+  //       $('#post-content').html(`
+  //         <label class='text-blue' for="content">Content</label>
+  //         <textarea id='content' class='form-control' name="content"></textarea>
+  //       `)
+  //     }
+  //   })
+  //
   });
