@@ -10,3 +10,7 @@ exports.signup = function(req, res) {
   console.log('Yay somebody is trying to signup to our app.')
   res.render('signup')
 }
+
+exports.menu = function (req, res) {
+  res.render('menu')
+}
