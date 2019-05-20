@@ -100,9 +100,9 @@ app.get('/signup', PagesController.signup)
 app.post('/signup', UsersController.newUser)
 app.get('/posts', PostsController.allPosts)
 app.post('/new-post', PostsController.newPost)
-app.post('/menu'), PagesController.menu
+app.get('/menu', PagesController.menu)
 
 app.get('/upvote-post/:id', PostsController.upvote)
 app.get('/downvote-post/:id', PostsController.downvote)
-
+//test commit
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
