@@ -15,10 +15,10 @@ exports.newPost = function(req, res) {
 
   var post = new Post({
     title: req.body.title,
-    type: req.body.type,
-    content: req.body.content,
+    address: req.body.address,
     category: req.body.category,
-    image: req.body.image
+    type: re.body.type,
+    request: req.body.request,
   })
 
   post.save(function (err) {
