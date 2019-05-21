@@ -9,7 +9,6 @@ const saltRounds = 10;
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const session = require("express-session")
-const DonutModel = require('./models/user.js');
 // Config
 const port = 3000
 
@@ -20,7 +19,7 @@ var UsersController = require('./controllers/users.js')
 
 // Models
 var postSchema = require('./models/order.js')
-var userSchema = require('./models/user.js')
+var User = require('./models/user.js')
 
 // Body Parser
 app.use(bodyParser.urlencoded({ extended: false }))

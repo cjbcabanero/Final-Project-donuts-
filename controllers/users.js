@@ -23,7 +23,7 @@ exports.newUser = function(req, res) {
   }
 
   bcrypt.hash(password, saltRounds, function(err, hash) {
-    var user = new User({ email: email, username: username, password: hash })
+    var user = new User({ username: username, password: hash })
     user.save(function(err, savedUser) {
       if (err) {
         console.log('ERROR ERROR')
