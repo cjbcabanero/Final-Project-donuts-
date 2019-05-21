@@ -17,7 +17,7 @@ exports.newPost = function(req, res) {
     title: req.body.title,
     address: req.body.address,
     category: req.body.category,
-    type: re.body.type,
+    type: req.body.type,
     request: req.body.request,
   })
 
