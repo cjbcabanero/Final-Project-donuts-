@@ -17,19 +17,27 @@ block content
           label.text-blue(for='category') Category 
           select.form-control(name='category')
             option(value='donuts') DONUTS
-            option(value='breakfast-sandwiches') BREAKFAST SANDWICHES
+            option(value='breakfast sandwiches') BREAKFAST SANDWICHES
+            option(value='ccs specials') CC'S SPECIALS
             option(value='drinks') DRINKS
         div  
           label.text-blue(for='type') Type
           select.form-control(id='post-type' name='type')
-            option(value='donut-holes') Donut Holes 
+            option(value='donut holes') Donut Holes 
             option(value='glazed') Glazed
             option(value='chocolate') Chocolate 
             option(value='strawberry') Strawberry
-            option(value='filled donut') Filled Donut
-            option(value='coffee') Coffee 
+            option(value='jelly filled') Jelly Filled
+            option(value='chocolate filled') Chocolate Filled
+            option(value='custard filled') Custard Filled
+            option(value='bacon egg ham cheese croissant') Bacon, Egg, Ham, Cheese Croissant
+            option(value='sausage ccmuffin w/ egg') Sausage CCmuffin w/ Egg
+            option(value='ccs filipino special') CC's Filipino Special
+            option(value='ccs creamy warm milk') CC's Creamy Warm Milk
+            option(value='coffee') Coffee
+            option(value='soft drinks') Soft Drinks 
         div(id='post-content')
           label.text-blue(for='content') Special Requests 
-          textarea#content.form-control(type='content' placeholder='Insert Request. If no special request, please simply type: None' name='request')
+          textarea#content.form-control(type='content' placeholder='Insert Special Request or Type of Soft Drink Here! If no special request or soft drink, please simply type: None' name='request')
         div
           button(type = "submit") Submit
