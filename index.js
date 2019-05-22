@@ -93,13 +93,14 @@ function isLoggedIn(req, res, next) {
   next();
 }
 
-app.get('/', PagesController.route)
+app.get('/orderform', PagesController.route)
 app.get('/logIn', PagesController.logIn)
 app.get('/signup', PagesController.signup)
 app.post('/signup', UsersController.newUser)
 app.get('/posts', PostsController.allPosts)
 app.post('/new-post', PostsController.newPost)
 app.get('/menu', PagesController.menu)
+app.get('/', PagesController.home)
 
 app.get('/upvote-post/:id', PostsController.upvote)
 app.get('/downvote-post/:id', PostsController.downvote)

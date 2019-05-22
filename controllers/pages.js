@@ -14,3 +14,7 @@ exports.signup = function(req, res) {
 exports.menu = function (req, res) {
   res.render('menu')
 }
+
+exports.home = function (req, res) {
+  res.render('home')
+}

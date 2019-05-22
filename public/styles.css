@@ -35,6 +35,15 @@ h1 {
   text-align: center;
 }
 
+.textform {
+  font-family: 'SpaceMeatballRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  color: pink;
+  text-align: center;
+}
+
 h2 {
   font-family: "Chalkduster", fantasy;
   color: red;
@@ -69,11 +78,6 @@ body {
   width: 100px;
 }
 
-
-/* p {
-  color: magenta;
-} */
-
 p {
    font-family: 'SpaceMeatballRegular';
    font-weight: normal;
@@ -86,6 +90,7 @@ a {
   font-style: normal;
   font-size: 20px;
 }
+
 
 #content {
   height: 150px;
@@ -111,6 +116,15 @@ a {
 #exampleInputPassword1 {
   height:38px;
   width:400px;
+}
+
+#homediv {
+  margin: auto;
+  margin-top: 9%;
+  height: 30%;
+  width: 45%;
+  background-color: blue;
+  padding: 80px;
 }
 
 .menudiv {
