@@ -120,11 +120,15 @@ a {
 
 #homediv {
   margin: auto;
-  margin-top: 9%;
-  height: 30%;
+  margin-top: 12%;
+  height: 26%;
   width: 45%;
   background-color: blue;
   padding: 80px;
+}
+
+#homediv:hover {
+  background-color: yellow;
 }
 
 .menudiv {
